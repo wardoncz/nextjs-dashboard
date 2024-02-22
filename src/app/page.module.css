@@ -1,0 +1,11 @@
+.main {height: auto; width: 100%;}
+.home {height: 100vh; width: 100%; position: absolute; background: url(bg-game-transformed.jpeg) center no-repeat; background-size: cover;}
+.bgBlur { height: 100vh; width: 100%; position: absolute; background: rgba(0, 0, 0, .5); backdrop-filter: blur(4px);}
+.logo {height: 50px; width: 43.56px; position: absolute; margin: 20px 0 0 40px; background: url(arcade-logo.png) center no-repeat; background-size: cover;}
+.profileIcon { height: 50px; width: 35px; position: absolute; margin: 20px 0 0 calc(100% - 75px); background: url(profile.png) center no-repeat; background-size: cover;}
+.nav { height: 56px; width: 520px; position: absolute; margin: 20px 0 0 calc(50% - 260px); display: flex; justify-content: space-between;}
+.nav a { font-size: 40px; color: #fff; text-decoration: none;}
+.header { height: 175px; width: 525px; position: absolute; margin: 240px 0 0 40px; color: #fff;}
+.header h1 { font-size: 64px;}
+.header p { font-size: 20px; padding-top: 24px;}
+.header div { height: 4px; width: 525px; background: #fff; border-radius: 5px; margin-top: 5px;}
