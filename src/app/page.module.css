@@ -10,7 +10,7 @@
 .nav a:after {content: ""; position: absolute; bottom: 5px; left: 0; width: 0; height: 4px; border-radius: 10px; background-color: #FFA500; transition: all .3s ease-in-out;}
 .nav a:hover::after { width: 100%;}
 .nav a:hover { color: #FFA500;}
-.header { height: 255px; width: 445px; position: absolute; margin: calc(50vh - 127.5px) 0 0 40px; color: #fff;}
+.header { height: 315px; width: 445px; position: absolute; margin: calc(50vh - 157.5px) 0 0 40px; color: #fff;}
 .header h1 { font-size: 64px; color: #fff;}
 .header p { font-size: 20px; margin-top: 15px;}
 .header div { height: 4px; width: 445px; background: #FFA500; border-radius: 5px; margin-top: -20px;}
