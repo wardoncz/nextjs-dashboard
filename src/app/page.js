@@ -17,7 +17,7 @@ export default function Home() {
         <header className={styles.header}>
           <h1>ARCADE ALLIES</h1>
           <div></div>
-          <p>Arcade allies is a web platform that connects you with gamers who love the same PC games as you do. You can find, chat, and play with your game mates from all over the world. Join Arcade allies and have more fun gaming.</p>
+          <p>is a web platform that connects you with gamers who love the same PC games as you do. You can find, chat, and play with your game mates from all over the world. Join Arcade allies and have more fun gaming.</p>
         </header>
       </div>
     </main>
