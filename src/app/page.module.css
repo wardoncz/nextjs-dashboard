@@ -1,10 +1,10 @@
 .main {height: auto; width: 100%;}
 .home {height: 100vh; width: 100%; position: absolute; background: url(bg-game-transformed.jpeg) center no-repeat; background-size: cover;}
 .bgBlur { height: 100vh; width: 100%; position: absolute; background: rgba(0, 0, 0, .5); backdrop-filter: blur(4px);}
-.logo {height: 50px; width: 43.56px; position: absolute; margin: 20px 0 0 40px; background: url(arcade-logo.png) center no-repeat; background-size: cover; transition: transform .3s ease-in-out;}
-.logo:hover {transform: scale(1.2);}
-.profileIcon { height: 50px; width: 35px; position: absolute; margin: 20px 0 0 calc(100% - 75px); background: url(profile.png) center no-repeat; background-size: cover; transition: transform .3s ease-in-out;}
-.profileIcon:hover {transform: scale(1.2);}
+.logo {height: 50px; width: 43.56px; position: absolute; margin: 20px 0 0 40px; background: url(arcade-logo.png) center no-repeat; background-size: cover; transition: all .3s ease-in-out;}
+.logo:hover {transform: scale(1.2); background: url(arcade-logo-or.png) center no-repeat; background-size: cover;}
+.profileIcon { height: 50px; width: 35px; position: absolute; margin: 20px 0 0 calc(100% - 75px); background: url(profile.png) center no-repeat; background-size: cover; transition: all .3s ease-in-out;}
+.profileIcon:hover {transform: scale(1.2); background: url(profile-or.png) center no-repeat; background-size: cover;}
 .nav { height: 56px; width: 700px; position: absolute; margin: 20px 0 0 calc(50% - 350px); display: flex; justify-content: space-between; align-items: center;}
 .nav a { position: relative; font-size: 40px; color: #fff; text-decoration: none; transition: all .3s ease-in-out;}
 .nav a:after {content: ""; position: absolute; bottom: 5px; left: 0; width: 0; height: 4px; border-radius: 10px; background-color: #FFA500; transition: all .3s ease-in-out;}
