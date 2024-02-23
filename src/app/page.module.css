@@ -7,11 +7,12 @@
 .profileIcon:hover {transform: scale(1.2);}
 .nav { height: 56px; width: 700px; position: absolute; margin: 20px 0 0 calc(50% - 350px); display: flex; justify-content: space-between; align-items: center;}
 .nav a { position: relative; font-size: 40px; color: #fff; text-decoration: none; transition: all .3s ease-in-out;}
-.nav a:after {content: ""; position: absolute; bottom: 5px; left: 0; width: 0; height: 4px; border-radius: 10px; background-color: #1F51FF; transition: all .3s ease-in-out;}
+.nav a:after {content: ""; position: absolute; bottom: 5px; left: 0; width: 0; height: 4px; border-radius: 10px; background-color: #FFA500; transition: all .3s ease-in-out;}
 .nav a:hover::after { width: 100%;}
-.nav a:hover { color: #1F51FF;}
+.nav a:hover { color: #FFA500;}
 .header { height: 255px; width: 445px; position: absolute; margin: calc(50vh - 127.5px) 0 0 40px; color: #fff;}
 .header h1 { font-size: 64px; color: #fff;}
 .header p { font-size: 20px; margin-top: 15px;}
-.header div { height: 4px; width: 445px; background: #1F51FF; border-radius: 5px; margin-top: -20px;}
-.header a { height: 35px; width: 150px; position: absolute; top: 270px; padding-top: 5px; font-size: 20px; color: #fff; text-decoration: none; text-align: center; background: #1F51FF; border-radius: 10px;}
+.header div { height: 4px; width: 445px; background: #FFA500; border-radius: 5px; margin-top: -20px;}
+.header a { height: 35px; width: 150px; position: absolute; top: 270px; padding-top: 5px; font-size: 20px; color: #000; text-decoration: none; text-align: center; background: #FFA500; border-radius: 10px; border: transparent 2px solid; transition: all .3s ease-in-out;}
+.header a:hover { border: #FFA500 2px solid; background: none; color: #FFA500;}
