@@ -10,6 +10,7 @@ export default function Home() {
         <a className={styles.profileIcon} href="#"></a>
         <nav className={styles.nav}>
         <a href="#">HOME</a>
+        <a href="#">ABOUT US</a>
         <a href="#">GAMES</a>
         <a href="#">CHAT</a>
         <a href="#">FAQ</a>
