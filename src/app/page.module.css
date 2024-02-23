@@ -7,9 +7,10 @@
 .profileIcon:hover {transform: scale(1.2);}
 .nav { height: 56px; width: 700px; position: absolute; margin: 20px 0 0 calc(50% - 350px); display: flex; justify-content: space-between; align-items: center;}
 .nav a { position: relative; font-size: 40px; color: #fff; text-decoration: none;}
-.nav a:after {content: ""; position: absolute;  bottom: 5px; left: 0; width: 0; height: 4px; border-radius: 10px; background-color: #fff; transition: width .3s ease-in-out;}
+.nav a:after {content: ""; position: absolute;  bottom: 5px; left: 0; width: 0; height: 4px; border-radius: 10px; background-color: #1F51FF; transition: all .3s ease-in-out;}
 .nav a:hover::after { width: 100%;}
-.header { height: 175px; width: 445px; position: absolute; margin: 240px 0 0 40px; color: #fff;}
-.header h1 { font-size: 64px;}
+.header { height: 255px; width: 445px; position: absolute; margin: calc(50vh - 127.5px) 0 0 40px; color: #fff;}
+.header h1 { font-size: 64px; color: #fff;}
 .header p { font-size: 20px; margin-top: 15px;}
-.header div { height: 4px; width: 445px; background: #fff; border-radius: 5px; margin-top: -20px;}
+.header div { height: 4px; width: 445px; background: #1F51FF; border-radius: 5px; margin-top: -20px;}
+.header a { height: 35px; width: 150px; position: absolute; top: 270px; padding-top: 5px; font-size: 20px; color: #fff; text-decoration: none; text-align: center; background: #1F51FF; border-radius: 10px;}
