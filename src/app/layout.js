@@ -18,6 +18,16 @@ export const metadata = {
         url: '/images/favicon.ico',
         href: '/images/favicon.ico',
       },
+      {
+        media: '(prefers-color-scheme: light)',
+        url: '/images/favicon-bk.ico',
+        href: '/images/favicon-bk.ico',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/images/favicon.ico',
+        href: '/images/favicon.ico',
+      },
     ],
   },
 };
