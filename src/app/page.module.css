@@ -15,7 +15,7 @@
 .nav a:after {content: ""; position: absolute; bottom: 5px; left: 0; width: 0; height: 4px; border-radius: 10px; background-color: #FFA500; transition: all .3s ease-in-out;}
 .nav a:hover::after { width: 100%;}
 .nav a:hover { color: #FFA500;}
-.navBtn { position: absolute; margin: 30px 0 0 calc(100% - 104.5px); color: #fff; text-decoration: none; font-size: 24px;}
+.navBtn { position: absolute; margin: 30px 0 0 calc(100% - 104.5px); color: #fff; text-decoration: none; font-size: 24px; display: none;}
 
 .centerBox { height: auto; width: 90%; position: absolute; display: flex; justify-content: space-between; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 
