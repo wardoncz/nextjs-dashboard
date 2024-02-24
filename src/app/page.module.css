@@ -1,6 +1,6 @@
 .main {height: auto; width: 100%;}
 .home {height: 100vh; width: 100%; position: absolute; background: transparent;}
-.bg { position: fixed;}
+.bg { position: fixed; height: 100vh; width: 100%;}
 .bgBlur { height: 100vh; width: 100%; position: fixed; background: rgba(0, 0, 0, .5); backdrop-filter: blur(4px);}
 
 .logo {height: 50px; width: 43.56px; position: absolute; margin: 20px 0 0 40px; background: url(arcade-logo.png) center no-repeat; background-size: cover; transition: all .3s ease-in-out;}
@@ -9,11 +9,13 @@
 .profileIcon { height: 50px; width: 35px; position: absolute; margin: 20px 0 0 calc(100% - 75px); background: url(profile.png) center no-repeat; background-size: cover; transition: all .3s ease-in-out;}
 .profileIcon:hover {transform: scale(1.2); background: url(profile-or.png) center no-repeat; background-size: cover;}
 
-.nav {height: 56px;width: 700px;position: absolute;padding-top: 20px;left: 50%;transform: translate(-50%);display: flex;justify-content: space-between;align-items: center;}
+.nav {height: 56px;width: 700px;position: absolute;padding-top: 20px;left: 50%;transform: translate(-50%);display: flex;justify-content: space-between; align-items: center; transition: all .5s ease-in-out;}
 .nav a { position: relative; font-size: 40px; color: #fff; text-decoration: none; transition: all .3s ease-in-out;}
+.nav a:last-child { display: none;}
 .nav a:after {content: ""; position: absolute; bottom: 5px; left: 0; width: 0; height: 4px; border-radius: 10px; background-color: #FFA500; transition: all .3s ease-in-out;}
 .nav a:hover::after { width: 100%;}
 .nav a:hover { color: #FFA500;}
+.navBtn { position: absolute; margin: 30px 0 0 calc(100% - 104.5px); color: #fff; text-decoration: none; font-size: 24px;}
 
 .centerBox { height: auto; width: 90%; position: absolute; display: flex; justify-content: space-between; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 
@@ -37,7 +39,14 @@
 .statsRatings { margin: 114px 0 0 219px;}
 
 @media only screen and (max-width: 767px) and (orientation: portrait){
-    .nav { display: none;}
+    .profileIcon { display: none;}
+    .navBtn { display: block;}
+    .nav { width: 183.27px; height: 100%; z-index: 1; display: block; background: #000; left: 0; transform: translate(0); padding: 0 40px;}
+    .nav a {width: 100%; height: 64px; position: relative; display: block;}
+    .nav a:last-child { display: block;}
+    .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
+    .nav a:hover::after { width: 0;}
+    .nav a:hover { color: #FFA500;}
 
     .centerBox { display: block; width: 291px;}
 
@@ -52,7 +61,7 @@
     .stats h1 { font-size: 42px; font-weight: 100; text-align: left;}
     .statsCont { width: 279px;}
     .statsCont a { width: 130px; height: 70px;}
-    .statsCont a h1 { display: block; height: 45px; font-size: 35px;}
+    .statsCont a h1 { height: 45px; font-size: 35px;}
     .statsCont a h2 { font-size: 14px;}
 
     .statsOnline { margin: 0 0 0 144px;}
@@ -61,7 +70,14 @@
 }
 
 @media only screen and (max-width: 999px) and (orientation: landscape){
-    .nav { display: none;}
+    .profileIcon { display: none;}
+    .navBtn { display: block;}
+    .nav { width: 183.27px; height: 100%; display: block; z-index: 1; background: #000; left: 0; transform: translate(0); padding: 0 40px;}
+    .nav a {width: 100%; height: 64px; position: relative; display: block;}
+    .nav a:last-child { display: block;}
+    .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
+    .nav a:hover::after { width: 0;}
+    .nav a:hover { color: #FFA500;}
 
     .centerBox { display: flex; width: 90%;}
 
@@ -82,4 +98,19 @@
     .statsOnline { margin: 0 0 0 144px;}
     .statsGames { margin: 84px 0 0 0;}
     .statsRatings { margin: 84px 0 0 144px;}
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait){
+    .navBtn { display: block;}
+    .navBtn { position: absolute; margin: 40px 0 0 calc(100% - 104.5px); color: #fff; text-decoration: none; font-size: 24px;}
+    .nav { width: 183.27px; height: 100%; display: block; z-index: 1; background: #000; left: 0; transform: translate(0); padding: 0 40px;}
+    .nav a {width: 100%; height: 64px; position: relative; display: block;}
+    .nav a:last-child { display: block;}
+    .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
+    .nav a:hover::after { width: 0;}
+    .nav a:hover { color: #FFA500;}
+    
+    .centerBox { display: block; width: 445px;}
+    .stats { top: 40px;}
+    .stats h1 { text-align: left;}
 }
