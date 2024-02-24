@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 
 export default function Home() {
 
-  const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(true);
 
   const toggleNav = () => {
     setShowNav(!showNav);
