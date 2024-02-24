@@ -10,8 +10,8 @@ export const metadata = {
     icon: [
       {
         media: '(prefers-color-scheme: light)',
-        url: '/images/favicon-or.ico',
-        href: '/images/favicon-or.ico',
+        url: '/images/favicon-bk.ico',
+        href: '/images/favicon-bk.ico',
       },
       {
         media: '(prefers-color-scheme: dark)',
