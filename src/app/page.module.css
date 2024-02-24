@@ -15,18 +15,42 @@
 .nav a:hover::after { width: 100%;}
 .nav a:hover { color: #FFA500;}
 
-.aboutHeader { height: 315px; width: 445px; position: absolute; margin: calc(50vh - 157.5px) 0 0 40px; color: #fff;}
+.aboutHeader { height: 315px; width: 445px; position: absolute; margin: calc(50vh - 157.5px) 0 0 40px;}
 .aboutHeader h1 { font-size: 64px; color: #fff;}
-.aboutHeader p { font-size: 20px; margin-top: 15px;}
+.aboutHeader p { font-size: 20px; margin-top: 15px; color: #fff;}
 .aboutHeader div { height: 4px; width: 445px; background: #FFA500; border-radius: 5px; margin-top: -20px;}
 .aboutHeader a { height: 35px; width: 150px; position: absolute; top: 270px; padding-top: 5px; font-size: 20px; color: #000; text-decoration: none; text-align: center; background: #FFA500; border-radius: 10px; border: transparent 2px solid; transition: all .3s ease-in-out;}
 .aboutHeader a:hover { border: #FFA500 2px solid; background: none; color: #FFA500;}
 
 .stats { height: 315px; width: 419px; position: absolute; margin: calc(50vh - 157.5px) 0 0 calc(100% - 459px);}
 .stats h1 { font-size: 64px; color: #fff; text-align: right;}
-.line { height: 4px; width: 100%; background: #FFA500; border-radius: 5px; margin-top: -20px;}
+.line { height: 4px; width: 419px; background: #FFA500; border-radius: 5px; margin-top: -20px;}
 .statsCont { height: 179px; width: 419px; position: absolute; padding-top: 19px;}
 .statsCont a { height: 95px; width: 200px; position: absolute; background: rgba(255, 255, 255, .1); backdrop-filter: blur(10px); border: #ffffff59 solid 1px; border-radius: 10px; display: block;}
 .stats a:link { text-decoration: none;}
 .statsCont a h1 { height: 65px; text-align: right; font-size: 50px; padding-right: 10px; color: #FFA500;}
 .statsCont a h2 { text-align: right; font-size: 20px; padding-right: 10px; color: #fff; font-weight: 100;}
+.statsOnline { margin: 0 0 0 219px;}
+.statsGames { margin: 114px 0 0 0;}
+.statsRatings { margin: 114px 0 0 219px;}
+
+@media only screen and (max-width: 767px) and (orientation: portrait){
+    .nav { display: none;}
+    .aboutHeader { height: 350px; width: 291px; margin: 80px 0 0 calc(50% - 145.5px);}
+    .aboutHeader h1 { font-size: 42px; font-weight: 100;}
+    .aboutHeader p { font-size: 14px; font-weight: 100;}
+    .aboutHeader div { width: 291px;}
+    .aboutHeader a { width: 130px; top: 190px;}
+
+    .stats { width: 279px; height: 230px; margin: 370px 0 0 40px;}
+    .line { width: 279px;}
+    .stats h1 { font-size: 42px; font-weight: 100; text-align: left;}
+    .statsCont { width: 279px;}
+    .statsCont a { width: 130px; height: 70px;}
+    .statsCont a h1 { display: block; height: 45px; font-size: 35px;}
+    .statsCont a h2 { font-size: 14px;}
+
+    .statsOnline { margin: 0 0 0 144px;}
+    .statsGames { margin: 84px 0 0 0;}
+    .statsRatings { margin: 84px 0 0 144px;}
+}
