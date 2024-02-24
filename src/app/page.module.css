@@ -59,3 +59,27 @@
     .statsGames { margin: 84px 0 0 0;}
     .statsRatings { margin: 84px 0 0 144px;}
 }
+
+@media only screen and (max-width: 767px) and (orientation: landscape){
+    .nav { display: none;}
+
+    .centerBox { display: flex; width: 90%;}
+
+    .aboutHeader { height: 250px; width: 291px;}
+    .aboutHeader h1 { font-size: 42px; font-weight: 100;}
+    .aboutHeader p { font-size: 14px; font-weight: 100;}
+    .aboutHeader div { width: 291px;}
+    .aboutHeader a { width: 130px; top: 190px;}
+
+    .stats { width: 279px; height: 230px;}
+    .line { width: 279px;}
+    .stats h1 { font-size: 42px; font-weight: 100;}
+    .statsCont { width: 279px; padding-top: 27px;}
+    .statsCont a { width: 130px; height: 70px;}
+    .statsCont a h1 { display: block; height: 45px; font-size: 35px;}
+    .statsCont a h2 { font-size: 14px;}
+
+    .statsOnline { margin: 0 0 0 144px;}
+    .statsGames { margin: 84px 0 0 0;}
+    .statsRatings { margin: 84px 0 0 144px;}
+}
