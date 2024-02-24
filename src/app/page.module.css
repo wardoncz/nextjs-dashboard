@@ -1,7 +1,7 @@
 .main {height: auto; width: 100%;}
 .home {height: 100vh; width: 100%; position: absolute; background: transparent;}
 .bg { position: fixed;}
-.bgBlur { height: 100vh; width: 100%; position: absolute; background: rgba(0, 0, 0, .5); backdrop-filter: blur(4px);}
+.bgBlur { height: 100vh; width: 100%; position: fixed; background: rgba(0, 0, 0, .5); backdrop-filter: blur(4px);}
 
 .logo {height: 50px; width: 43.56px; position: absolute; margin: 20px 0 0 40px; background: url(arcade-logo.png) center no-repeat; background-size: cover; transition: all .3s ease-in-out;}
 .logo:hover {transform: scale(1.2); background: url(arcade-logo-or.png) center no-repeat; background-size: cover;}
