@@ -9,22 +9,22 @@ export const metadata = {
   icons: {
     icon: [
       {
-        media: '(prefers-system-scheme: light)',
-        url: '/images/favicon-bk.ico',
-        href: '/images/favicon-bk.ico',
-      },
-      {
-        media: '(prefers-system-scheme: dark)',
-        url: '/images/favicon.ico',
-        href: '/images/favicon.ico',
-      },
-      {
         media: '(prefers-color-scheme: light)',
         url: '/images/favicon-bk.ico',
         href: '/images/favicon-bk.ico',
       },
       {
         media: '(prefers-color-scheme: dark)',
+        url: '/images/favicon.ico',
+        href: '/images/favicon.ico',
+      },
+      {
+        media: '(prefers-system-scheme: light)',
+        url: '/images/favicon-bk.ico',
+        href: '/images/favicon-bk.ico',
+      },
+      {
+        media: '(prefers-system-scheme: dark)',
         url: '/images/favicon.ico',
         href: '/images/favicon.ico',
       },
