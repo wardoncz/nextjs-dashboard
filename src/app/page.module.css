@@ -26,7 +26,7 @@
 .stats h1 { font-size: 64px; color: #fff; text-align: right;}
 .line { height: 4px; width: 100%; background: #FFA500; border-radius: 5px; margin-top: -20px;}
 .statsCont { height: 179px; width: 419px; position: absolute; padding-top: 19px;}
-.statsCont a { height: 95px; width: 200px; position: absolute; background: rgba(255, 255, 255, .1); backdrop-filter: blur(10px); border: #fff solid 1px; border-radius: 10px; display: block;}
+.statsCont a { height: 95px; width: 200px; position: absolute; background: rgba(255, 255, 255, .1); backdrop-filter: blur(10px); border: #ffffff59 solid 1px; border-radius: 10px; display: block;}
 .stats a:link { text-decoration: none;}
 .statsCont a h1 { height: 65px; text-align: right; font-size: 50px; padding-right: 10px; color: #FFA500;}
-.statsCont a h2 { text-align: right; font-size: 20px; padding-right: 10px; color: #fff;}
+.statsCont a h2 { text-align: right; font-size: 20px; padding-right: 10px; color: #fff; font-weight: 100;}
