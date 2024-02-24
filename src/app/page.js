@@ -5,23 +5,48 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.home}>
+        <div className={styles.bg}>
+          <Image src="/bg-game-transformed.jpeg" width="1920" height="1080" alt="Background"></Image>
+        </div>
         <div className={styles.bgBlur}></div>
         <a className={styles.logo} href="#"></a>
         <a className={styles.profileIcon} href="#"></a>
         <nav className={styles.nav}>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">GAMES</a>
-        <a href="#">CHAT</a>
-        <a href="#">FAQ</a>
+          <a href="#">HOME</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">GAMES</a>
+          <a href="#">CHAT</a>
+          <a href="#">FAQ</a>
         </nav>
-        <header className={styles.header}>
+        <header className={styles.aboutHeader}>
           <h1>ARCADE ALLIES</h1>
           <div></div>
           <p>is a web platform that connects you with gamers who love the same PC games as you do. You can find, chat, and play with your game mates from all over the world. Join Arcade allies and have more fun gaming.</p>
           <a href="#">GET STARTED</a>
           <a href="#" style={{left:"170px"}}>LEARN MORE</a>
         </header>
+        <div className={styles.stats}>
+          <h1>STATS</h1>
+          <div className={styles.line}></div>
+          <div className={styles.statsCont}>
+            <a href="#">
+              <h1>100</h1>
+              <h2>TOTAL PLAYERS</h2>
+            </a>
+            <a href="#"style={{margin:"0 0 0 219px"}}>
+              <h1>24</h1>
+              <h2>ONLINE PLAYERS</h2>
+            </a>
+            <a href="#" style={{margin:"114px 0 0 0"}}>
+              <h1>20+</h1>
+              <h2>GAMES</h2>
+            </a>
+            <a href="#" style={{margin:"114px 0 0 219px"}}>
+              <h1>4.9</h1>
+              <h2>PLAYER RATINGS</h2>
+            </a>
+          </div>
+        </div>
       </div>
     </main>
   );
