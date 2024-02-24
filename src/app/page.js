@@ -18,12 +18,13 @@ export default function Home() {
           <a href="#">CHAT</a>
           <a href="#">FAQ</a>
         </nav>
+        <div className={styles.centerBox}>
           <header className={styles.aboutHeader}>
             <h1>ARCADE ALLIES</h1>
             <div></div>
             <p>is a web platform that connects you with gamers who love the same PC games as you do. You can find, chat, and play with your game mates from all over the world. Join Arcade allies and have more fun gaming.</p>
             <a href="#">GET STARTED</a>
-            <a href="#" style={{left:"150px"}}>LEARN MORE</a>
+            <a href="#" style={{left:"170px"}}>LEARN MORE</a>
           </header>
           <div className={styles.stats}>
             <h1>STATS</h1>
@@ -47,6 +48,7 @@ export default function Home() {
               </a>
             </div>
           </div>
+        </div>
       </div>
     </main>
   );
