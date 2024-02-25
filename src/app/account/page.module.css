@@ -1,0 +1,81 @@
+.main {height: auto; width: 100%;}
+.home {height: 100vh; width: 100%; position: absolute; background: transparent;}
+.bg { position: fixed; height: 100vh; width: 100%;}
+.bgBlur { height: 100vh; width: 100%; position: fixed; background: rgba(0, 0, 0, .5); backdrop-filter: blur(4px);}
+
+.logo {height: 50px; width: 43.56px; position: absolute; margin: 20px 0 0 40px; background: url(arcade-logo.png) center no-repeat; background-size: cover; transition: all .3s ease-in-out;}
+.logo:hover {transform: scale(1.2); background: url(arcade-logo-or.png) center no-repeat; background-size: cover;}
+
+.profileIcon { height: 50px; width: 35px; position: absolute; margin: 20px 0 0 calc(100% - 75px); background: url(profile.png) center no-repeat; background-size: cover; transition: all .3s ease-in-out;}
+.profileIcon:hover {transform: scale(1.2); background: url(profile-or.png) center no-repeat; background-size: cover;}
+
+.nav {height: 56px;width: 700px;position: absolute; padding-top: 20px; left: 50%; transform: translate(-50%) ;display: flex; justify-content: space-between; align-items: center; transition: all .5s ease-in-out;}
+.nav a { position: relative; font-size: 40px; color: #fff; text-decoration: none; transition: all .3s ease-in-out;}
+.nav a:last-child { display: none;}
+.nav a:after {content: ""; position: absolute; bottom: 5px; left: 0; width: 0; height: 4px; border-radius: 10px; background-color: #FFA500; transition: all .3s ease-in-out;}
+.nav a:hover::after { width: 100%;}
+.nav a:hover { color: #FFA500;}
+
+.navBtn { position: absolute; margin: 30px 0 0 calc(100% - 80px); color: #fff; text-decoration: none; font-size: 24px; display: none; }
+.navBtn span { width: 40px; height: 5px; position: relative; display: block; border-radius: 5px; background: #fff; margin: 6px 0; transition: all .3s ease-in-out;}
+.change span:nth-child(1) { transform: translate(0, 11px) rotate(-45deg)}
+.change span:nth-child(2) { opacity: 0;}
+.change span:nth-child(3) { transform: translate(0, -11px) rotate(45deg)}
+.navBtn:hover { cursor: pointer; }
+
+.loginContainer { height: 400px; width: 400px; position: absolute; left: 50%; transform: translate(-50%); margin-top: calc(50vh - 200px); background: rgba(0, 0, 0, .1); border: 1px solid #fff; border-radius: 20px; backdrop-filter: blur(10px); text-align: center;}
+.loginContainer h1 { color: #fff; font-weight: 100; font-size: 40px; padding: 20px 0;}
+.loginContainer form { display: flex; flex-direction: column; gap: 30px; align-items: center;}
+.loginContainer input[type="email"], .loginContainer input[type="password"] { width: 300px; padding: 10px 0; background: none; border: none; border-bottom: #fff 1px solid; color: #fff;}
+.loginContainer input[type="email"]::placeholder, .loginContainer input[type="password"]::placeholder { color: #fff;}
+.loginContainer button { width: 300px; height: 40px; background: #fff; border-radius: 10px; border: none;}
+.options { width: 300px; display: flex; justify-content: space-between; align-items: center;font-weight: 100;}
+.options label { color: #fff; margin-left: -40px;}
+.loginContainer a { color: #fff; text-decoration: none; }
+.loginContainer p { color: #fff;}
+
+@media only screen and (max-width: 767px) and (orientation: portrait){
+    .profileIcon { display: none;}
+    .navBtn { display: block;}
+    .nav { width: auto; height: 100%; z-index: 1; display: block; background: #000; left: -300px; transform: translate(0); padding: 0 40px;}
+    .nav a {width: 100%; height: auto; font-size: 20px; position: relative; display: block;}
+    .nav a:first-child { padding-top: 20px;}
+    .nav a:last-child { display: block;}
+    .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
+    .nav a:hover::after { width: 0;}
+    .nav a:hover { color: #FFA500;}
+    .opened { left: 0 !important }
+
+
+}
+
+@media only screen and (max-width: 999px) and (orientation: landscape){
+    .profileIcon { display: none;}
+    .navBtn { display: block;}
+    .nav { width: auto; height: 100%; display: block; z-index: 1; background: #000; left: -300px; transform: translate(0); padding: 0 40px;}
+    .nav a {width: 100%; height: auto; font-size: 20px; position: relative; display: block;}
+    .nav a:first-child { padding-top: 20px;}
+    .nav a:last-child { display: block;}
+    .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
+    .nav a:hover::after { width: 0;}
+    .nav a:hover { color: #FFA500;}
+    .opened { left: 0 !important }
+
+
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait){
+    .profileIcon { display: none;}
+    .navBtn { display: block;}
+    .navBtn { position: absolute; margin: 40px 0 0 calc(100% - 104.5px); color: #fff; text-decoration: none; font-size: 24px;}
+    .nav { width: 183.27px; height: 100%; display: block; z-index: 1; background: #000; left: -300px; transform: translate(0); padding: 0 40px;}
+    .nav a {width: 100%; height: 64px; position: relative; display: block;}
+    .nav a:first-child { padding-top: 20px;}
+    .nav a:last-child { display: block;}
+    .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
+    .nav a:hover::after { width: 0;}
+    .nav a:hover { color: #FFA500;}
+    .opened { left: 0 !important }
+
+
+}

@@ -11,8 +11,8 @@ export default function Home() {
           <Image src="/bg-game-transformed.jpeg" width="2048" height="1280" alt="Background"></Image>
         </div>
         <div className={styles.bgBlur}></div>
-        <a className={styles.logo} href="#"></a>
-        <a className={styles.profileIcon} href="#"></a>
+        <a className={styles.logo}></a>
+        <a className={styles.profileIcon} href="/account/"></a>
         <NavBtn/>
         <nav className={styles.nav} id="nav">
           <a href="#">HOME</a>
