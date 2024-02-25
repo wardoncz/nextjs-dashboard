@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { NavBtn } from "./components/NavBtn";
 
 export default function Home() {
   return (
@@ -11,7 +13,7 @@ export default function Home() {
         <div className={styles.bgBlur}></div>
         <a className={styles.logo} href="#"></a>
         <a className={styles.profileIcon} href="#"></a>
-        <a className={styles.navBtn} id="navBtn">MENU</a>
+        <NavBtn/>
         <nav className={styles.nav} id="nav">
           <a href="#">HOME</a>
           <a href="#">ABOUT US</a>
