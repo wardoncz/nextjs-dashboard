@@ -22,7 +22,6 @@
 .change span:nth-child(2) { opacity: 0;}
 .change span:nth-child(3) { transform: translate(0, -11px) rotate(45deg)}
 .navBtn:hover { cursor: pointer; }
-.opened { left: 0 !important }
 
 .centerBox { height: auto; width: 90%; position: absolute; display: flex; justify-content: space-between; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 
@@ -32,6 +31,7 @@
 .aboutHeader div { height: 4px; width: 445px; background: #FFA500; border-radius: 5px; margin-top: -20px;}
 .aboutHeader a { height: 35px; width: 150px; position: absolute; top: 270px; padding-top: 5px; font-size: 20px; color: #000; text-decoration: none; text-align: center; background: #FFA500; border-radius: 10px; border: transparent 2px solid; transition: all .3s ease-in-out;}
 .aboutHeader a:hover { border: #FFA500 2px solid; background: none; color: #FFA500;}
+.aboutHeader a:last-child { left: 170px;}
 
 .stats { height: 315px; width: 419px; position: relative;}
 .stats h1 { font-size: 64px; color: #fff; text-align: right;}
@@ -55,6 +55,7 @@
     .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
     .nav a:hover::after { width: 0;}
     .nav a:hover { color: #FFA500;}
+    .opened { left: 0 !important }
 
     .centerBox { display: block; width: 291px;}
 
@@ -63,6 +64,7 @@
     .aboutHeader p { font-size: 14px; font-weight: 100;}
     .aboutHeader div { width: 291px;}
     .aboutHeader a { width: 130px; top: 190px;}
+    .aboutHeader a:last-child { left: 160px;}
 
     .stats { width: 279px; height: 230px; top: 40px;}
     .line { width: 279px;}
@@ -87,6 +89,7 @@
     .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
     .nav a:hover::after { width: 0;}
     .nav a:hover { color: #FFA500;}
+    .opened { left: 0 !important }
 
     .centerBox { display: flex; width: 90%;}
 
@@ -95,6 +98,7 @@
     .aboutHeader p { font-size: 14px; font-weight: 100;}
     .aboutHeader div { width: 291px;}
     .aboutHeader a { width: 130px; top: 190px;}
+    .aboutHeader a:last-child { left: 160px;}
 
     .stats { width: 279px; height: 230px;}
     .line { width: 279px;}
@@ -120,7 +124,8 @@
     .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
     .nav a:hover::after { width: 0;}
     .nav a:hover { color: #FFA500;}
-    
+    .opened { left: 0 !important }
+
     .centerBox { display: block; width: 445px;}
     .stats { top: 40px;}
     .stats h1 { text-align: left;}
