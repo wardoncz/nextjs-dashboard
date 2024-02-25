@@ -1,18 +1,10 @@
-"use client";
-import { useState } from 'react';
 import Image from "next/image";
 import styles from "./page.module.css";
+import React from "react";
 
 
 
 export default function Home() {
-
-  const [showNav, setShowNav] = useState(true);
-
-  const toggleNav = () => {
-    setShowNav(!showNav);
-  };
-
   return (
     <main className={styles.main}>
       <div className={styles.home}>
@@ -22,8 +14,8 @@ export default function Home() {
         <div className={styles.bgBlur}></div>
         <a className={styles.logo} href="#"></a>
         <a className={styles.profileIcon} href="#"></a>
-        <a className={styles.navBtn} href="#" onClick={toggleNav}>MENU</a>
-        <nav className={styles.nav} style={{ opacity: showNav ? '100%' : '0'}}>
+        <a className={styles.navBtn} id="navBtn">MENU</a>
+        <nav className={styles.nav} id="nav">
           <a href="#">HOME</a>
           <a href="#">ABOUT US</a>
           <a href="#">GAMES</a>

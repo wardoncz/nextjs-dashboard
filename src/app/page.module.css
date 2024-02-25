@@ -9,7 +9,7 @@
 .profileIcon { height: 50px; width: 35px; position: absolute; margin: 20px 0 0 calc(100% - 75px); background: url(profile.png) center no-repeat; background-size: cover; transition: all .3s ease-in-out;}
 .profileIcon:hover {transform: scale(1.2); background: url(profile-or.png) center no-repeat; background-size: cover;}
 
-.nav {height: 56px;width: 700px;position: absolute;padding-top: 20px;left: 50%;transform: translate(-50%);display: flex;justify-content: space-between; align-items: center; transition: all .5s ease-in-out;}
+.nav {height: 56px;width: 700px;position: absolute; padding-top: 20px; left: 50%; transform: translate(-50%) ;display: flex; justify-content: space-between; align-items: center; transition: all .5s ease-in-out;}
 .nav a { position: relative; font-size: 40px; color: #fff; text-decoration: none; transition: all .3s ease-in-out;}
 .nav a:last-child { display: none;}
 .nav a:after {content: ""; position: absolute; bottom: 5px; left: 0; width: 0; height: 4px; border-radius: 10px; background-color: #FFA500; transition: all .3s ease-in-out;}
@@ -41,7 +41,7 @@
 @media only screen and (max-width: 767px) and (orientation: portrait){
     .profileIcon { display: none;}
     .navBtn { display: block;}
-    .nav { width: 183.27px; height: 100%; z-index: 1; display: block; background: #000; left: 0; transform: translate(0); padding: 0 40px;}
+    .nav { width: 183.27px; height: 100%; z-index: 1; display: block; background: #000; left: -300px; transform: translate(0); padding: 0 40px;}
     .nav a {width: 100%; height: 64px; position: relative; display: block;}
     .nav a:last-child { display: block;}
     .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
@@ -72,7 +72,7 @@
 @media only screen and (max-width: 999px) and (orientation: landscape){
     .profileIcon { display: none;}
     .navBtn { display: block;}
-    .nav { width: 183.27px; height: 100%; display: block; z-index: 1; background: #000; left: 0; transform: translate(0); padding: 0 40px;}
+    .nav { width: 183.27px; height: 100%; display: block; z-index: 1; background: #000; left: -300px; transform: translate(0); padding: 0 40px;}
     .nav a {width: 100%; height: 64px; position: relative; display: block;}
     .nav a:last-child { display: block;}
     .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
@@ -101,9 +101,10 @@
 }
 
 @media only screen and (min-width: 768px) and (orientation: portrait){
+    .profileIcon { display: none;}
     .navBtn { display: block;}
     .navBtn { position: absolute; margin: 40px 0 0 calc(100% - 104.5px); color: #fff; text-decoration: none; font-size: 24px;}
-    .nav { width: 183.27px; height: 100%; display: block; z-index: 1; background: #000; left: 0; transform: translate(0); padding: 0 40px;}
+    .nav { width: 183.27px; height: 100%; display: block; z-index: 1; background: #000; left: -300px; transform: translate(0); padding: 0 40px;}
     .nav a {width: 100%; height: 64px; position: relative; display: block;}
     .nav a:last-child { display: block;}
     .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
