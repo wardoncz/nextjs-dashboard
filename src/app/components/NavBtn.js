@@ -9,18 +9,25 @@ export class NavBtn extends React.Component {
     }
 
     onClick() {
-        document.querySelector("#navBtn").onclick = () => {
-            if (document.querySelector("nav").classList.contains(`${styles.opened}`)) {
-                document.querySelector("nav").classList.remove(`${styles.opened}`)
-            } else {
-                document.querySelector("nav").classList.add(`${styles.opened}`)
-            }
+        const navBtn = document.querySelector("#navBtn")
+        const nav = document.querySelector("nav");
+        
+        if (nav.classList.contains(`${styles.opened}`)) {
+            nav.classList.remove(`${styles.opened}`)
+            navBtn.classList.remove(`${styles.change}`)
+        } else {
+            nav.classList.add(`${styles.opened}`)
+            navBtn.classList.add(`${styles.change}`)
         }
     }
 
     render() {
         return (
-            <a className={styles.navBtn} id="navBtn" onClick={this.navOnClick}>MENU</a>
+            <a className={styles.navBtn} id="navBtn" onClick={this.navOnClick}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         )
     }
 }
