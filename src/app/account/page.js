@@ -3,6 +3,9 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { NavBtn } from "./components/NavBtn";
 
+import Baloo from 'next/font/local'
+const baloo = Baloo({ src: './Baloo-Regular-webfont.woff' })
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -25,15 +28,15 @@ export default function Home() {
         <div className={styles.loginContainer}>
           <h1>LOGIN</h1>
           <form>
-            <input type="email" id="email" placeholder="Email"></input>
-            <input type="password" id="password" placeholder="Password"></input>
+            <input type="email" id="email" placeholder="Email" className={baloo.inputMailFont}></input>
+            <input type="password" id="password" placeholder="Password" className={baloo.inputPassFont}></input>
 
             <div className={styles.options}>
                 <input type="checkbox" id="rememberMe"></input>
                 <label>Remember me</label>
                 <a href="#">Forgot Password</a>
             </div>
-            <button type="submit">Sign in</button>
+            <button type="submit" className={baloo.buttonFont}>Sign in</button>
             <p>Dont have an account? <a href="">Register</a></p>
           </form>
         </div>
