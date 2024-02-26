@@ -19,7 +19,7 @@ export class InputPass extends React.Component {
 
     render() {
         return (
-            <input type="password" id="password" placeholder="Password" className={classes}></input>
+            <input type="password" id="password" placeholder="Password" className={classes} required></input>
         )
     }
 }

@@ -4,10 +4,11 @@ import styles from "./page.module.css";
 import { NavBtn } from "./components/NavBtn";
 import { InputMail } from "./components/InputMail";
 import { InputPass } from "./components/InputPass";
+import { InputName } from "./components/InputName";
+import { Register } from "./components/Register";
 
 import Baloo from 'next/font/local'
 const baloo = Baloo({ src: './Baloo-Regular-webfont.woff' })
-const classes = `${baloo.className} ${styles.textInput}`
 
 export default function Home() {
   return (
@@ -28,19 +29,19 @@ export default function Home() {
           <a href="#">FAQ</a>
           <a href="#">ACCOUNT</a>
         </nav>
-        <div className={styles.loginContainer}>
-          <h1>LOGIN</h1>
+        <div className={styles.loginContainer} id="formContainer">
+          <h1 id="formHeader">LOGIN</h1>
           <form>
             <InputMail/>
             <InputPass/>
-
+            <InputName/>
             <div className={styles.options}>
                 <input type="checkbox" id="rememberMe"></input>
                 <label>Remember me</label>
                 <a href="#">Forgot Password</a>
             </div>
-            <button type="submit" className={baloo.className}>Sign in</button>
-            <p>Dont have an account? <a href="">Register</a></p>
+            <button type="submit" className={baloo.className} id="submit">Sign in</button>
+            <p>Dont have an account? <Register/></p>
           </form>
         </div>
       </div>

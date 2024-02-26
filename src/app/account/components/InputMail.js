@@ -6,20 +6,20 @@ const classes = `${baloo.className} ${styles.textInput}`
 
 export class InputMail extends React.Component {
     componentDidMount() {
-        const inputPass = document.querySelector("#email")
+        const inputMail = document.querySelector("#email")
 
-        inputPass.addEventListener("focusin", function () {
-            inputPass.classList.add(`${styles.inputFocused}`)
+        inputMail.addEventListener("focusin", function () {
+            inputMail.classList.add(`${styles.inputFocused}`)
         })
 
-        inputPass.addEventListener("focusout", function () {
-            inputPass.classList.remove(`${styles.inputFocused}`)
+        inputMail.addEventListener("focusout", function () {
+            inputMail.classList.remove(`${styles.inputFocused}`)
         })
     }
 
     render() {
         return (
-            <input type="email" id="email" placeholder="Email" className={classes}></input>
+            <input type="email" id="email" placeholder="Email" className={classes} required></input>
         )
     }
 }
