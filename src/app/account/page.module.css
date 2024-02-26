@@ -23,17 +23,20 @@
 .change span:nth-child(3) { transform: translate(0, -11px) rotate(45deg)}
 .navBtn:hover { cursor: pointer; }
 
-.loginContainer { height: 400px; width: 400px; position: absolute; left: 50%; transform: translate(-50%); margin-top: calc(50vh - 200px); background: rgba(0, 0, 0, .1); border: 1px solid #fff; border-radius: 20px; backdrop-filter: blur(10px); text-align: center;}
+.loginContainer { height: 415px; width: 400px; position: absolute; left: 50%; transform: translate(-50%); margin-top: calc(50vh - 200px); background: rgba(0, 0, 0, .1); border: 1px solid #fff; border-radius: 20px; backdrop-filter: blur(10px); text-align: center;}
 .loginContainer h1 { color: #fff; font-weight: 100; font-size: 40px; padding: 20px 0;}
 .loginContainer form { display: flex; flex-direction: column; gap: 30px; align-items: center;}
-.loginContainer input[type="email"], .loginContainer input[type="password"] { width: 300px; padding: 10px 0; background: none; border: none; border-bottom: #fff 1px solid; color: #fff;}
-.loginContainer input[type="email"]::placeholder, .loginContainer input[type="password"]::placeholder { color: #fff;}
+.textInput { width: 300px; padding: 15px 5px; background: none; border: none; border-bottom: #fff 1px solid; color: #fff;}
+.loginContainer input[type="checkbox"] { accent-color: #FFA500;}
+.textInput:focus { outline: none;}
+.textInput::placeholder { color: #fff; position: absolute; transition: all .3s ease-in-out;}
+.inputFocused::placeholder { margin-top: -20px;}
 .loginContainer button { width: 300px; height: 40px; background: #fff; border-radius: 10px; border: none;}
-.options { width: 300px; display: flex; justify-content: space-between; align-items: center;font-weight: 100;}
+.options { width: 300px; display: flex; justify-content: space-between; align-items: center; font-weight: 100;}
 .options label { color: #fff; margin-left: -40px;}
 .loginContainer a { color: #fff; text-decoration: underline; transition: all .3s ease-in-out;}
 .loginContainer a:hover { color: #FFA500;}
-.loginContainer p { color: #fff;}
+.loginContainer p { color: #fff; margin-top: -10px;}
 
 @media only screen and (max-width: 767px) and (orientation: portrait){
     .profileIcon { display: none;}
