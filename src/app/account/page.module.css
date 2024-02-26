@@ -31,7 +31,8 @@
 .textInput:focus { outline: none;}
 .textInput::placeholder { color: #fff; position: absolute; transition: all .3s ease-in-out;}
 .inputFocused::placeholder { margin-top: -20px;}
-.loginContainer button { width: 300px; height: 40px; background: #fff; border-radius: 10px; border: none;}
+.loginContainer button { width: 300px; height: 40px; background: #fff; border-radius: 10px; border: none; transition: all .3s ease-in-out;}
+.loginContainer button:hover { background: #FFA500;} 
 .options { width: 300px; display: flex; justify-content: space-between; align-items: center; font-weight: 100;}
 .options label { color: #fff; margin-left: -40px;}
 .loginContainer a { color: #fff; text-decoration: underline; transition: all .3s ease-in-out;}
