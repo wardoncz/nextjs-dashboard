@@ -54,7 +54,6 @@
     .nav { width: auto; height: 100%; z-index: 1; display: block; background: #000; left: -300px; transform: translate(0); padding: 0 40px;}
     .nav a {width: 100%; height: auto; font-size: 20px; position: relative; display: block;}
     .nav a:first-child { padding-top: 20px;}
-    .nav a:last-child { display: block;}
     .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
     .nav a:hover::after { width: 0;}
     .nav a:hover { color: #FFA500;}
@@ -73,7 +72,6 @@
     .nav { width: auto; height: 100%; display: block; z-index: 1; background: #000; left: -300px; transform: translate(0); padding: 0 40px;}
     .nav a {width: 100%; height: auto; font-size: 20px; position: relative; display: block;}
     .nav a:first-child { padding-top: 20px;}
-    .nav a:last-child { display: block;}
     .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
     .nav a:hover::after { width: 0;}
     .nav a:hover { color: #FFA500;}
@@ -102,7 +100,6 @@
     .nav { width: 183.27px; height: 100%; display: block; z-index: 1; background: #000; left: -300px; transform: translate(0); padding: 0 40px;}
     .nav a {width: 100%; height: 64px; position: relative; display: block;}
     .nav a:first-child { padding-top: 20px;}
-    .nav a:last-child { display: block;}
     .nav a:after {content: ""; position: absolute; bottom: O; left: 0; width: 0; height: 0; border-radius: 0; background-color: none; transition: all .3s ease-in-out;}
     .nav a:hover::after { width: 0;}
     .nav a:hover { color: #FFA500;}
