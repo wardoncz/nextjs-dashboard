@@ -31,9 +31,9 @@
 .textInput { width: 300px; padding: 15px 5px; background: none; border: none; border-bottom: #fff 1px solid; color: #fff;}
 .textInput:focus { outline: none;}
 
-.textInput::placeholder { color: #fff; position: relative; transition: all .3s ease-in-out;}
-.textInput::-webkit-input-placeholder { color: #fff; position: relative; transition: all .3s ease-in-out;}
-.textInput::-moz-placeholder { color: #fff; position: relative; transition: all .3s ease-in-out;}
+.textInput::placeholder { color: #fff; position: absolute; transition: all .3s ease-in-out;}
+.textInput::-webkit-input-placeholder { color: #fff; position: absolute; transition: all .3s ease-in-out;}
+.textInput::-moz-placeholder { color: #fff; position: absolute; transition: all .3s ease-in-out;}
 
 .inputFocused::placeholder { margin-top: -20px;}
 .inputFocused::-webkit-input-placeholder { margin-top: -20px;}
