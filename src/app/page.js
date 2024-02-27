@@ -20,7 +20,7 @@ export default function Home() {
           <a href="#">GAMES</a>
           <a href="#">CHAT</a>
           <a href="#">FAQ</a>
-          <a href="#">ACCOUNT</a>
+          <a href="/account/">ACCOUNT</a>
         </nav>
         <div className={styles.centerBox}>
           <header className={styles.aboutHeader}>

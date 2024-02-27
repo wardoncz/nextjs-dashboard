@@ -27,7 +27,7 @@ export default function Home() {
           <a href="#">GAMES</a>
           <a href="#">CHAT</a>
           <a href="#">FAQ</a>
-          <a href="/account/">ACCOUNT</a>
+          <a href="#">ACCOUNT</a>
         </nav>
         <div className={styles.loginContainer} id="formContainer">
           <h1 id="formHeader">LOGIN</h1>
