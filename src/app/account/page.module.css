@@ -31,7 +31,11 @@
 .textInput { width: 300px; padding: 15px 5px; background: none; border: none; border-bottom: #fff 1px solid; color: #fff;}
 .textInput:focus { outline: none;}
 .textInput::placeholder { color: #fff; position: absolute; transition: all .3s ease-in-out;}
+.textInput::-webkit-input-placeholder { color: #fff; position: absolute; transition: all .3s ease-in-out;}
+.textInput::-moz-placeholder { color: #fff; position: absolute; transition: all .3s ease-in-out;}
 .inputFocused::placeholder { margin-top: -20px;}
+.inputFocused::-webkit-input-placeholder { margin-top: -20px;}
+.inputFocused::-moz-placeholder { margin-top: -20px;}
 .nameInput { display: none;}
 .loginContainer button { width: 300px; height: 40px; background: #fff; border-radius: 10px; border: none; transition: all .3s ease-in-out;}
 .loginContainer button:hover { background: #FFA500;} 
@@ -81,6 +85,8 @@
     .loginContainer a { font-size: 8px;}
     .textInput { width: 150px; font-size: 8px; padding: 7.5px 5px;}
     .inputFocused::placeholder { margin-top: -10px;}
+    .inputFocused::-webkit-input-placeholder { margin-top: -10px;}
+    .inputFocused::-moz-placeholder { margin-top: -10px;}
     .options { width: 150px;}
     .options label { margin: -40px;}
     .loginContainer button { width: 150px;}
