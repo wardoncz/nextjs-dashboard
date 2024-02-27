@@ -24,10 +24,11 @@
 .navBtn:hover { cursor: pointer; }
 
 .loginContainer { height: 400px; width: 400px; position: absolute; left: 50%; transform: translate(-50%); margin-top: calc(50vh - 200px); background: rgba(0, 0, 0, .1); border: 1px solid #fff; border-radius: 20px; backdrop-filter: blur(10px); text-align: center;}
+.loginContainerActive { height: 480px;}
 .loginContainer h1 { color: #fff; font-weight: 100; font-size: 40px; padding: 10px 0;}
 .loginContainer form { display: flex; flex-direction: column; gap: 30px; align-items: center;}
+.loginContainer input[type="checkbox"] { accent-color: #FFA500; font-size: 8px;}
 .textInput { width: 300px; padding: 15px 5px; background: none; border: none; border-bottom: #fff 1px solid; color: #fff;}
-.loginContainer input[type="checkbox"] { accent-color: #FFA500;}
 .textInput:focus { outline: none;}
 .textInput::placeholder { color: #fff; position: absolute; transition: all .3s ease-in-out;}
 .inputFocused::placeholder { margin-top: -20px;}
@@ -52,7 +53,11 @@
     .nav a:hover { color: #FFA500;}
     .opened { left: 0 !important }
 
-
+    .loginContainer { width: 295px;}
+    .textInput { width: 255px;}
+    .options { width: 255px;}
+    .options label { margin: -20px;}
+    .loginContainer button { width: 255px;}
 }
 
 @media only screen and (max-width: 999px) and (orientation: landscape){
@@ -67,7 +72,18 @@
     .nav a:hover { color: #FFA500;}
     .opened { left: 0 !important }
 
-
+    .loginContainer { height: 235px; width: 190px; margin-top: calc(50vh - 107.5px);}
+    .loginContainerActive { height: 275px;}
+    .loginContainer label { font-size: 8px;}
+    .loginContainer h1 { font-size: 20px;}
+    .loginContainer form { gap: 15px;}
+    .loginContainer p { font-size: 8px;}
+    .loginContainer a { font-size: 8px;}
+    .textInput { width: 150px; font-size: 8px; padding: 7.5px 5px;}
+    .inputFocused::placeholder { margin-top: -10px;}
+    .options { width: 150px;}
+    .options label { margin: -40px;}
+    .loginContainer button { width: 150px;}
 }
 
 @media only screen and (min-width: 768px) and (orientation: portrait){

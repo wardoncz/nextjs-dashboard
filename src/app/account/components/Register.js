@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../page.module.css";
 
 export class Register extends React.Component {
     constructor(props) {
@@ -17,14 +18,14 @@ export class Register extends React.Component {
         if (register.textContent == "Register"){
             formHeader.textContent = "REGISTER"
             name.style.display = "flex"
-            formContainer.style.height = "480px"
+            formContainer.classList.add(`${styles.loginContainerActive}`)
             register.textContent = "Login"
             submit.textContent = "Register"
         }
         else {
             formHeader.textContent = "LOGIN"
             name.style.display = "none"
-            formContainer.style.height = "400px"
+            formContainer.classList.remove(`${styles.loginContainerActive}`)
             register.textContent = "Register"
             submit.textContent = "Sign in"
         }
