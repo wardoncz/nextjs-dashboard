@@ -56,7 +56,7 @@
 
     .loginContainer { width: 295px;}
     .textInput { width: 255px;}
-    .textInput::placeholder { position: absolute;}
+    .textInput::placeholder { position: relative;}
     .options { width: 255px;}
     .options label { margin: -20px;}
     .loginContainer button { width: 255px;}
@@ -82,7 +82,7 @@
     .loginContainer a { font-size: 8px;}
     .textInput { width: 150px; font-size: 8px; padding: 7.5px 5px;}
     .inputFocused::placeholder { margin-top: -10px;}
-    .textInput::placeholder { position: absolute;}
+    .textInput::placeholder { position: relative;}
     .options label { margin: -40px;}
     .loginContainer button { width: 150px;}
 }
