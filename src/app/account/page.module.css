@@ -35,7 +35,7 @@
 .inputFocused::placeholder { margin-top: -20px;}
 
 .nameInput { display: none;}
-.loginContainer button { width: 300px; height: 40px; background: #fff; border-radius: 10px; border: none; transition: all .3s ease-in-out;}
+.loginContainer button { width: 300px; height: 40px; background: #fff; color: #000; border-radius: 10px; border: none; transition: all .3s ease-in-out;}
 .loginContainer button:hover { background: #FFA500;} 
 .options { width: 300px; display: flex; justify-content: space-between; align-items: center; font-weight: 100;}
 .options label { color: #fff; margin-left: -40px;}
